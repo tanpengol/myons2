@@ -15,22 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\cderror.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\cdjpeg.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\jchuff.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\jconfig.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\jdct.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\jdhuff.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\jerror.h">
@@ -54,15 +42,18 @@
     <ClInclude Include="include\jversion.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\transupp.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\jaricom.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="src\jcapimin.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\jcapistd.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jcarith.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\jccoefct.c">
@@ -95,9 +86,6 @@
     <ClCompile Include="src\jcparam.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\jcphuff.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\jcprepct.c">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -111,6 +99,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\jdapistd.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jdarith.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\jdatadst.c">
@@ -146,9 +137,6 @@
     <ClCompile Include="src\jdmerge.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\jdphuff.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\jdpostct.c">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -179,16 +167,10 @@
     <ClCompile Include="src\jidctint.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\jidctred.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\jmemmgr.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\jmemnobs.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\jpegtran.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\jquant1.c">

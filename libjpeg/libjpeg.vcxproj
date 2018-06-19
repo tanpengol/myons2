@@ -18,6 +18,65 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\jconfig.h" />
+    <ClInclude Include="include\jdct.h" />
+    <ClInclude Include="include\jerror.h" />
+    <ClInclude Include="include\jinclude.h" />
+    <ClInclude Include="include\jmemsys.h" />
+    <ClInclude Include="include\jmorecfg.h" />
+    <ClInclude Include="include\jpegint.h" />
+    <ClInclude Include="include\jpeglib.h" />
+    <ClInclude Include="include\jversion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\jaricom.c" />
+    <ClCompile Include="src\jcapimin.c" />
+    <ClCompile Include="src\jcapistd.c" />
+    <ClCompile Include="src\jcarith.c" />
+    <ClCompile Include="src\jccoefct.c" />
+    <ClCompile Include="src\jccolor.c" />
+    <ClCompile Include="src\jcdctmgr.c" />
+    <ClCompile Include="src\jchuff.c" />
+    <ClCompile Include="src\jcinit.c" />
+    <ClCompile Include="src\jcmainct.c" />
+    <ClCompile Include="src\jcmarker.c" />
+    <ClCompile Include="src\jcmaster.c" />
+    <ClCompile Include="src\jcomapi.c" />
+    <ClCompile Include="src\jcparam.c" />
+    <ClCompile Include="src\jcprepct.c" />
+    <ClCompile Include="src\jcsample.c" />
+    <ClCompile Include="src\jctrans.c" />
+    <ClCompile Include="src\jdapimin.c" />
+    <ClCompile Include="src\jdapistd.c" />
+    <ClCompile Include="src\jdarith.c" />
+    <ClCompile Include="src\jdatadst.c" />
+    <ClCompile Include="src\jdatasrc.c" />
+    <ClCompile Include="src\jdcoefct.c" />
+    <ClCompile Include="src\jdcolor.c" />
+    <ClCompile Include="src\jddctmgr.c" />
+    <ClCompile Include="src\jdhuff.c" />
+    <ClCompile Include="src\jdinput.c" />
+    <ClCompile Include="src\jdmainct.c" />
+    <ClCompile Include="src\jdmarker.c" />
+    <ClCompile Include="src\jdmaster.c" />
+    <ClCompile Include="src\jdmerge.c" />
+    <ClCompile Include="src\jdpostct.c" />
+    <ClCompile Include="src\jdsample.c" />
+    <ClCompile Include="src\jdtrans.c" />
+    <ClCompile Include="src\jerror.c" />
+    <ClCompile Include="src\jfdctflt.c" />
+    <ClCompile Include="src\jfdctfst.c" />
+    <ClCompile Include="src\jfdctint.c" />
+    <ClCompile Include="src\jidctflt.c" />
+    <ClCompile Include="src\jidctfst.c" />
+    <ClCompile Include="src\jidctint.c" />
+    <ClCompile Include="src\jmemmgr.c" />
+    <ClCompile Include="src\jmemnobs.c" />
+    <ClCompile Include="src\jquant1.c" />
+    <ClCompile Include="src\jquant2.c" />
+    <ClCompile Include="src\jutils.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{A7D3E011-2C0A-4BED-8718-84E34D81FC83}</ProjectGuid>
@@ -85,7 +144,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\ons\myons2\libjpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -111,78 +170,13 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\ons\myons2\libjpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="include\cderror.h" />
-    <ClInclude Include="include\cdjpeg.h" />
-    <ClInclude Include="include\jchuff.h" />
-    <ClInclude Include="include\jconfig.h" />
-    <ClInclude Include="include\jdct.h" />
-    <ClInclude Include="include\jdhuff.h" />
-    <ClInclude Include="include\jerror.h" />
-    <ClInclude Include="include\jinclude.h" />
-    <ClInclude Include="include\jmemsys.h" />
-    <ClInclude Include="include\jmorecfg.h" />
-    <ClInclude Include="include\jpegint.h" />
-    <ClInclude Include="include\jpeglib.h" />
-    <ClInclude Include="include\jversion.h" />
-    <ClInclude Include="include\transupp.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\jcapimin.c" />
-    <ClCompile Include="src\jcapistd.c" />
-    <ClCompile Include="src\jccoefct.c" />
-    <ClCompile Include="src\jccolor.c" />
-    <ClCompile Include="src\jcdctmgr.c" />
-    <ClCompile Include="src\jchuff.c" />
-    <ClCompile Include="src\jcinit.c" />
-    <ClCompile Include="src\jcmainct.c" />
-    <ClCompile Include="src\jcmarker.c" />
-    <ClCompile Include="src\jcmaster.c" />
-    <ClCompile Include="src\jcomapi.c" />
-    <ClCompile Include="src\jcparam.c" />
-    <ClCompile Include="src\jcphuff.c" />
-    <ClCompile Include="src\jcprepct.c" />
-    <ClCompile Include="src\jcsample.c" />
-    <ClCompile Include="src\jctrans.c" />
-    <ClCompile Include="src\jdapimin.c" />
-    <ClCompile Include="src\jdapistd.c" />
-    <ClCompile Include="src\jdatadst.c" />
-    <ClCompile Include="src\jdatasrc.c" />
-    <ClCompile Include="src\jdcoefct.c" />
-    <ClCompile Include="src\jdcolor.c" />
-    <ClCompile Include="src\jddctmgr.c" />
-    <ClCompile Include="src\jdhuff.c" />
-    <ClCompile Include="src\jdinput.c" />
-    <ClCompile Include="src\jdmainct.c" />
-    <ClCompile Include="src\jdmarker.c" />
-    <ClCompile Include="src\jdmaster.c" />
-    <ClCompile Include="src\jdmerge.c" />
-    <ClCompile Include="src\jdphuff.c" />
-    <ClCompile Include="src\jdpostct.c" />
-    <ClCompile Include="src\jdsample.c" />
-    <ClCompile Include="src\jdtrans.c" />
-    <ClCompile Include="src\jerror.c" />
-    <ClCompile Include="src\jfdctflt.c" />
-    <ClCompile Include="src\jfdctfst.c" />
-    <ClCompile Include="src\jfdctint.c" />
-    <ClCompile Include="src\jidctflt.c" />
-    <ClCompile Include="src\jidctfst.c" />
-    <ClCompile Include="src\jidctint.c" />
-    <ClCompile Include="src\jidctred.c" />
-    <ClCompile Include="src\jmemmgr.c" />
-    <ClCompile Include="src\jmemnobs.c" />
-    <ClCompile Include="src\jpegtran.c" />
-    <ClCompile Include="src\jquant1.c" />
-    <ClCompile Include="src\jquant2.c" />
-    <ClCompile Include="src\jutils.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
