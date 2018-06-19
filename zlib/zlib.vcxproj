@@ -145,7 +145,10 @@
     <ClCompile Include="src\gzread.c" />
     <ClCompile Include="src\gzwrite.c" />
     <ClCompile Include="src\infback.c" />
-    <ClCompile Include="src\inffas8664.c" />
+    <ClCompile Include="src\inffas8664.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\inffast.c" />
     <ClCompile Include="src\inflate.c" />
     <ClCompile Include="src\inftrees.c" />
