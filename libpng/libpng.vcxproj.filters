@@ -14,4 +14,74 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\png.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pngconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pngdebug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pnginfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pnglibconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pngpriv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pngstruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\png.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngerror.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngget.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngmem.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngpread.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngread.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngrio.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngrtran.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngrutil.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngset.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngtrans.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwio.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwrite.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwtran.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwutil.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

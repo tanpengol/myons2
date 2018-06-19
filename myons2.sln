@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "libpng\libpng.vcxproj", "{DA7754DD-0F8F-47E4-B252-829DD3DC64CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6C1614B-67B6-4759-8827-334A478886B9} = {A6C1614B-67B6-4759-8827-334A478886B9}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "libjpeg\libjpeg.vcxproj", "{A7D3E011-2C0A-4BED-8718-84E34D81FC83}"
 EndProject
