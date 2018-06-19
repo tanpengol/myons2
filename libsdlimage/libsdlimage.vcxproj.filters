@@ -14,4 +14,56 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SDL_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\IMG.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_bmp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_gif.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_jpg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_lbm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_pcx.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_png.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_pnm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_tga.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_tif.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_webp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_xcf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_xpm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_xv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMG_xxx.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

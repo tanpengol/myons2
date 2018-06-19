@@ -84,6 +84,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libpng\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libsdlimage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;WIN32;_WINDOWS;LOAD_BMP;LOAD_GIF;LOAD_JPG;LOAD_LBM;LOAD_PCX;LOAD_PNG;LOAD_PNM;LOAD_TGA;LOAD_TIF;LOAD_WEBP;LOAD_XPM;LOAD_XV;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +110,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libpng\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libsdlimage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;WIN32;_WINDOWS;LOAD_BMP;LOAD_GIF;LOAD_JPG;LOAD_LBM;LOAD_PCX;LOAD_PNG;LOAD_PNM;LOAD_TGA;LOAD_TIF;;LOAD_WEBP;LOAD_XPM;LOAD_XV;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -115,6 +119,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\SDL_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\IMG.c" />
+    <ClCompile Include="src\IMG_bmp.c" />
+    <ClCompile Include="src\IMG_gif.c" />
+    <ClCompile Include="src\IMG_jpg.c" />
+    <ClCompile Include="src\IMG_lbm.c" />
+    <ClCompile Include="src\IMG_pcx.c" />
+    <ClCompile Include="src\IMG_png.c" />
+    <ClCompile Include="src\IMG_pnm.c" />
+    <ClCompile Include="src\IMG_tga.c" />
+    <ClCompile Include="src\IMG_tif.c" />
+    <ClCompile Include="src\IMG_webp.c" />
+    <ClCompile Include="src\IMG_xcf.c" />
+    <ClCompile Include="src\IMG_xpm.c" />
+    <ClCompile Include="src\IMG_xv.c" />
+    <ClCompile Include="src\IMG_xxx.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
