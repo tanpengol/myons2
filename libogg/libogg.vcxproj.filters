@@ -13,5 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\ogg">
+      <UniqueIdentifier>{6873fca9-d02b-468a-834f-902d0cbb2ab9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bitwise.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framing.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ogg\ogg.h">
+      <Filter>头文件\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ogg\os_types.h">
+      <Filter>头文件\ogg</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
