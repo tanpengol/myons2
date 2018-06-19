@@ -14,4 +14,110 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\zconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zutil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crc32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\deflate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gzguts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\inffast.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\inffixed.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\inflate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\inftrees.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ioapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trees.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unzip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adler32.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crc32.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\deflate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gzclose.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gzlib.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gzread.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gzwrite.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\infback.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inffas8664.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inffast.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inflate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inftrees.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ioapi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trees.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uncompr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unzip.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zutil.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

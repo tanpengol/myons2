@@ -84,6 +84,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ZLIB_WINAPI;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +110,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ZLIB_WINAPI;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;ASMV;ASMINF;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -115,6 +119,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\zconf.h" />
+    <ClInclude Include="include\zlib.h" />
+    <ClInclude Include="include\zutil.h" />
+    <ClInclude Include="src\crc32.h" />
+    <ClInclude Include="src\crypt.h" />
+    <ClInclude Include="src\deflate.h" />
+    <ClInclude Include="src\gzguts.h" />
+    <ClInclude Include="src\inffast.h" />
+    <ClInclude Include="src\inffixed.h" />
+    <ClInclude Include="src\inflate.h" />
+    <ClInclude Include="src\inftrees.h" />
+    <ClInclude Include="src\ioapi.h" />
+    <ClInclude Include="src\trees.h" />
+    <ClInclude Include="src\unzip.h" />
+    <ClInclude Include="src\zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adler32.c" />
+    <ClCompile Include="src\compress.c" />
+    <ClCompile Include="src\crc32.c" />
+    <ClCompile Include="src\deflate.c" />
+    <ClCompile Include="src\gzclose.c" />
+    <ClCompile Include="src\gzlib.c" />
+    <ClCompile Include="src\gzread.c" />
+    <ClCompile Include="src\gzwrite.c" />
+    <ClCompile Include="src\infback.c" />
+    <ClCompile Include="src\inffas8664.c" />
+    <ClCompile Include="src\inffast.c" />
+    <ClCompile Include="src\inflate.c" />
+    <ClCompile Include="src\inftrees.c" />
+    <ClCompile Include="src\ioapi.c" />
+    <ClCompile Include="src\trees.c" />
+    <ClCompile Include="src\uncompr.c" />
+    <ClCompile Include="src\unzip.c" />
+    <ClCompile Include="src\zip.c" />
+    <ClCompile Include="src\zutil.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
