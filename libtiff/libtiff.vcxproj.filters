@@ -14,4 +14,170 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\libport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\t4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tif_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tif_dir.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tif_fax3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tif_predict.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tiff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tiffconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tiffio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tiffiop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tiffvers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uvcode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dummy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\getopt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strcasecmp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_aux.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_close.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_codec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_color.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_compress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_dir.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_dirinfo.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_dirread.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_dirwrite.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_dumpmode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_error.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_extension.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_fax3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_fax3sm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_flush.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_getimage.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_jbig.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_jpeg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_jpeg_12.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_luv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_lzma.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_lzw.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_next.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_ojpeg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_open.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_packbits.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_pixarlog.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_predict.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_print.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_read.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_strip.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_swab.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_thunder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_tile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_version.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_warning.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_win32.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_write.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tif_zip.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

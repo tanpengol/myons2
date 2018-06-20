@@ -84,7 +84,7 @@ _tiffReadProc(thandle_t fd, void* buf, tmsize_t size)
                 size_t io_size = bytes_total-bytes_read;
                 if (io_size > TIFF_IO_MAX)
                         io_size = TIFF_IO_MAX;
-                count=read(fdh.fd, buf_offset, (TIFFIOSize_t) io_size);
+                count=_read(fdh.fd, buf_offset, (TIFFIOSize_t) io_size);
                 if (count <= 0)
                         break;
         }
@@ -112,7 +112,7 @@ _tiffWriteProc(thandle_t fd, void* buf, tmsize_t size)
                 size_t io_size = bytes_total-bytes_written;
                 if (io_size > TIFF_IO_MAX)
                         io_size = TIFF_IO_MAX;
-                count=write(fdh.fd, buf_offset, (TIFFIOSize_t) io_size);
+                count=_write(fdh.fd, buf_offset, (TIFFIOSize_t) io_size);
                 if (count <= 0)
                         break;
         }
@@ -141,7 +141,7 @@ _tiffCloseProc(thandle_t fd)
 {
 	fd_as_handle_union_t fdh;
 	fdh.h = fd;
-	return(close(fdh.fd));
+	return(_close(fdh.fd));
 }
 
 static uint64
@@ -237,7 +237,7 @@ TIFFOpen(const char* name, const char* mode)
 	m |= O_BINARY;
 #endif
 
-	fd = open(name, m, 0666);
+	fd = _open(name, m, 0666);
 	if (fd < 0) {
 		if (errno > 0 && strerror(errno) != NULL ) {
 			TIFFErrorExt(0, module, "%s: %s", name, strerror(errno) );
@@ -249,7 +249,7 @@ TIFFOpen(const char* name, const char* mode)
 
 	tif = TIFFFdOpen((int)fd, name, mode);
 	if(!tif)
-		close(fd);
+		_close(fd);
 	return tif;
 }
 
@@ -302,7 +302,7 @@ TIFFOpenW(const wchar_t* name, const char* mode)
 	_TIFFfree(mbname);
 	
 	if(!tif)
-		close(fd);
+		_close(fd);
 	return tif;
 }
 #endif

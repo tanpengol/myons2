@@ -84,6 +84,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ons\myons2\zlib\include;D:\ons\myons2\libjbig\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libtiff\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +110,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ons\myons2\zlib\include;D:\ons\myons2\libjbig\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libtiff\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -115,6 +119,62 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\libport.h" />
+    <ClInclude Include="include\t4.h" />
+    <ClInclude Include="include\tiff.h" />
+    <ClInclude Include="include\tiffconf.h" />
+    <ClInclude Include="include\tiffio.h" />
+    <ClInclude Include="include\tiffiop.h" />
+    <ClInclude Include="include\tiffvers.h" />
+    <ClInclude Include="include\tif_config.h" />
+    <ClInclude Include="include\tif_dir.h" />
+    <ClInclude Include="include\tif_fax3.h" />
+    <ClInclude Include="include\tif_predict.h" />
+    <ClInclude Include="include\uvcode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dummy.c" />
+    <ClCompile Include="src\getopt.c" />
+    <ClCompile Include="src\strcasecmp.c" />
+    <ClCompile Include="src\tif_aux.c" />
+    <ClCompile Include="src\tif_close.c" />
+    <ClCompile Include="src\tif_codec.c" />
+    <ClCompile Include="src\tif_color.c" />
+    <ClCompile Include="src\tif_compress.c" />
+    <ClCompile Include="src\tif_dir.c" />
+    <ClCompile Include="src\tif_dirinfo.c" />
+    <ClCompile Include="src\tif_dirread.c" />
+    <ClCompile Include="src\tif_dirwrite.c" />
+    <ClCompile Include="src\tif_dumpmode.c" />
+    <ClCompile Include="src\tif_error.c" />
+    <ClCompile Include="src\tif_extension.c" />
+    <ClCompile Include="src\tif_fax3.c" />
+    <ClCompile Include="src\tif_fax3sm.c" />
+    <ClCompile Include="src\tif_flush.c" />
+    <ClCompile Include="src\tif_getimage.c" />
+    <ClCompile Include="src\tif_jbig.c" />
+    <ClCompile Include="src\tif_jpeg.c" />
+    <ClCompile Include="src\tif_jpeg_12.c" />
+    <ClCompile Include="src\tif_luv.c" />
+    <ClCompile Include="src\tif_lzma.c" />
+    <ClCompile Include="src\tif_lzw.c" />
+    <ClCompile Include="src\tif_next.c" />
+    <ClCompile Include="src\tif_ojpeg.c" />
+    <ClCompile Include="src\tif_open.c" />
+    <ClCompile Include="src\tif_packbits.c" />
+    <ClCompile Include="src\tif_pixarlog.c" />
+    <ClCompile Include="src\tif_predict.c" />
+    <ClCompile Include="src\tif_print.c" />
+    <ClCompile Include="src\tif_read.c" />
+    <ClCompile Include="src\tif_strip.c" />
+    <ClCompile Include="src\tif_swab.c" />
+    <ClCompile Include="src\tif_thunder.c" />
+    <ClCompile Include="src\tif_tile.c" />
+    <ClCompile Include="src\tif_version.c" />
+    <ClCompile Include="src\tif_warning.c" />
+    <ClCompile Include="src\tif_win32.c" />
+    <ClCompile Include="src\tif_write.c" />
+    <ClCompile Include="src\tif_zip.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
