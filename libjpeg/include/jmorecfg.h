@@ -31,7 +31,8 @@
  */
 
 #define BITS_IN_JSAMPLE  8	/* use 8, 9, 10, 11, or 12 */
-
+//#define BITS_IN_JSAMPLE 12
+//#define NEED_12_BIT_NAMES
 
 /*
  * Maximum number of components (color channels) allowed in JPEG image.
