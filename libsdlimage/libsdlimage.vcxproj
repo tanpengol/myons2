@@ -84,7 +84,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\ons\myons2\libpng\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libsdlimage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libwebp\include;D:\ons\myons2\libtiff\include;D:\ons\myons2\libpng\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libsdlimage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;WIN32;_WINDOWS;LOAD_BMP;LOAD_GIF;LOAD_JPG;LOAD_LBM;LOAD_PCX;LOAD_PNG;LOAD_PNM;LOAD_TGA;LOAD_TIF;LOAD_WEBP;LOAD_XPM;LOAD_XV;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -110,7 +110,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\ons\myons2\libpng\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libsdlimage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libwebp\include;D:\ons\myons2\libtiff\include;D:\ons\myons2\libpng\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libsdlimage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;WIN32;_WINDOWS;LOAD_BMP;LOAD_GIF;LOAD_JPG;LOAD_LBM;LOAD_PCX;LOAD_PNG;LOAD_PNM;LOAD_TGA;LOAD_TIF;;LOAD_WEBP;LOAD_XPM;LOAD_XV;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>

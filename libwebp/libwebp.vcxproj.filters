@@ -13,5 +13,486 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\webp">
+      <UniqueIdentifier>{928637bc-5557-474e-be3b-c8156a8eea4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\enc">
+      <UniqueIdentifier>{12f9f297-7e73-46e0-89cf-a3a044ec6497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\dec">
+      <UniqueIdentifier>{77dd187e-f20e-4335-a664-13b7ce927961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\dsp">
+      <UniqueIdentifier>{18d91f05-0eea-4d41-89b4-9d52e025afea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\utils">
+      <UniqueIdentifier>{b119eb0d-709f-4a2d-8735-711ac60542ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\enc">
+      <UniqueIdentifier>{9b8245fb-b1ff-42b7-a4f6-8d2e7c834aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\dec">
+      <UniqueIdentifier>{d6d7b020-2463-49bb-b61e-6a35a4a13081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\utils">
+      <UniqueIdentifier>{23a2fbff-66e3-47ed-b03e-c735a63dc549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\dsp">
+      <UniqueIdentifier>{e5719362-71c9-42ad-ad9e-7860392a52b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\webp\config.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\webp\decode.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\webp\demux.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\webp\encode.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\webp\format_constants.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\webp\mux.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\webp\mux_types.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\webp\types.h">
+      <Filter>头文件\webp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enc\backward_references_enc.h">
+      <Filter>头文件\enc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enc\cost_enc.h">
+      <Filter>头文件\enc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enc\histogram_enc.h">
+      <Filter>头文件\enc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enc\vp8i_enc.h">
+      <Filter>头文件\enc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enc\vp8li_enc.h">
+      <Filter>头文件\enc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dec\alphai_dec.h">
+      <Filter>头文件\dec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dec\common_dec.h">
+      <Filter>头文件\dec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dec\vp8_dec.h">
+      <Filter>头文件\dec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dec\vp8i_dec.h">
+      <Filter>头文件\dec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dec\vp8li_dec.h">
+      <Filter>头文件\dec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dec\webpi_dec.h">
+      <Filter>头文件\dec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\common_sse2.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\common_sse41.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\dsp.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\lossless.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\lossless_common.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\mips_macro.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\msa_macro.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\neon.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dsp\yuv.h">
+      <Filter>头文件\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\bit_reader_inl_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\bit_reader_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\bit_writer_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\color_cache_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\endian_inl_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\filters_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\huffman_encode_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\huffman_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\quant_levels_dec_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\quant_levels_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\random_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\rescaler_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\thread_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\enc\alpha_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\analysis_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\backward_references_cost_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\backward_references_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\config_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\cost_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\filter_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\frame_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\histogram_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\iterator_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\near_lossless_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\picture_csp_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\picture_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\picture_psnr_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\picture_rescale_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\picture_tools_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\predictor_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\quant_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\syntax_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\token_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\tree_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\vp8l_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\webp_enc.c">
+      <Filter>源文件\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\alpha_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\buffer_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\frame_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\idec_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\io_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\quant_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\tree_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\vp8_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\vp8l_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dec\webp_dec.c">
+      <Filter>源文件\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\bit_reader_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\bit_writer_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\color_cache_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\filters_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\huffman_encode_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\huffman_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\quant_levels_dec_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\quant_levels_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\random_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\rescaler_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\thread_utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\utils.c">
+      <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\alpha_processing.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\alpha_processing_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\alpha_processing_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\alpha_processing_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\alpha_processing_sse41.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\cost.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\cost_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\cost_mips32.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\cost_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\cpu.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec_clip_tables.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec_mips32.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec_msa.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\dec_sse41.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc_avx2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc_mips32.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc_msa.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\enc_sse41.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\filters.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\filters_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\filters_msa.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\filters_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\filters_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_enc.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_enc_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_enc_mips32.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_enc_msa.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_enc_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_enc_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_enc_sse41.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_msa.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\lossless_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\rescaler.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\rescaler_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\rescaler_mips32.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\rescaler_msa.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\rescaler_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\rescaler_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\ssim.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\ssim_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\upsampling.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\upsampling_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\upsampling_msa.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\upsampling_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\upsampling_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\upsampling_sse41.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\yuv.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\yuv_mips_dsp_r2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\yuv_mips32.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\yuv_neon.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\yuv_sse2.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dsp\yuv_sse41.c">
+      <Filter>源文件\dsp</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
