@@ -84,6 +84,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;WIN32;_WINDOWS;NOCONTROLS;THREADED_AUDIO;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libsdl\include;D:\ons\myons2\libsmpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +110,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;WIN32;_WINDOWS;NOCONTROLS;THREADED_AUDIO;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libsdl\include;D:\ons\myons2\libsmpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -115,6 +119,53 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\MPEG.h" />
+    <ClInclude Include="include\MPEGaction.h" />
+    <ClInclude Include="include\MPEGaudio.h" />
+    <ClInclude Include="include\MPEGerror.h" />
+    <ClInclude Include="include\MPEGfilter.h" />
+    <ClInclude Include="include\MPEGlist.h" />
+    <ClInclude Include="include\MPEGring.h" />
+    <ClInclude Include="include\MPEGstream.h" />
+    <ClInclude Include="include\MPEGsystem.h" />
+    <ClInclude Include="include\MPEGvideo.h" />
+    <ClInclude Include="include\smpeg.h" />
+    <ClInclude Include="src\video\decoders.h" />
+    <ClInclude Include="src\video\dither.h" />
+    <ClInclude Include="src\video\proto.h" />
+    <ClInclude Include="src\video\util.h" />
+    <ClInclude Include="src\video\vhar128.h" />
+    <ClInclude Include="src\video\video.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\audio\bitwindow.cpp" />
+    <ClCompile Include="src\audio\filter.cpp" />
+    <ClCompile Include="src\audio\filter_2.cpp" />
+    <ClCompile Include="src\audio\hufftable.cpp" />
+    <ClCompile Include="src\audio\MPEGaudio.cpp" />
+    <ClCompile Include="src\audio\mpeglayer1.cpp" />
+    <ClCompile Include="src\audio\mpeglayer2.cpp" />
+    <ClCompile Include="src\audio\mpeglayer3.cpp" />
+    <ClCompile Include="src\audio\mpegtable.cpp" />
+    <ClCompile Include="src\audio\mpegtoraw.cpp" />
+    <ClCompile Include="src\MPEG.cpp" />
+    <ClCompile Include="src\MPEGfilter.c" />
+    <ClCompile Include="src\MPEGlist.cpp" />
+    <ClCompile Include="src\MPEGring.cpp" />
+    <ClCompile Include="src\MPEGstream.cpp" />
+    <ClCompile Include="src\MPEGsystem.cpp" />
+    <ClCompile Include="src\smpeg.cpp" />
+    <ClCompile Include="src\video\decoders.cpp" />
+    <ClCompile Include="src\video\floatdct.cpp" />
+    <ClCompile Include="src\video\gdith.cpp" />
+    <ClCompile Include="src\video\jrevdct.cpp" />
+    <ClCompile Include="src\video\motionvec.cpp" />
+    <ClCompile Include="src\video\MPEGvideo.cpp" />
+    <ClCompile Include="src\video\parseblock.cpp" />
+    <ClCompile Include="src\video\readfile.cpp" />
+    <ClCompile Include="src\video\util.cpp" />
+    <ClCompile Include="src\video\vhar128.cpp" />
+    <ClCompile Include="src\video\video.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

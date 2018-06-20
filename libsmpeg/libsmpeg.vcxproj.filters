@@ -13,5 +13,156 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\public">
+      <UniqueIdentifier>{6612b65f-3835-4af3-a173-12bb12eee434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\video">
+      <UniqueIdentifier>{8c45aab0-6e82-4fb2-859f-8ac5b4ef98ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\audio">
+      <UniqueIdentifier>{aa906fbe-834e-4736-a2dc-cb707fcdaaed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\video">
+      <UniqueIdentifier>{80a2bf15-9d3f-41ca-a405-481425c80cfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\video\decoders.h">
+      <Filter>头文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\dither.h">
+      <Filter>头文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\proto.h">
+      <Filter>头文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\util.h">
+      <Filter>头文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\vhar128.h">
+      <Filter>头文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\video.h">
+      <Filter>头文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEG.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGaction.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGaudio.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGerror.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGfilter.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGlist.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGring.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGstream.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGsystem.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MPEGvideo.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smpeg.h">
+      <Filter>头文件\public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\audio\bitwindow.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\filter.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\filter_2.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\hufftable.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\MPEGaudio.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\mpeglayer1.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\mpeglayer2.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\mpeglayer3.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\mpegtable.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\mpegtoraw.cpp">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\decoders.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\floatdct.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\gdith.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\jrevdct.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\motionvec.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\MPEGvideo.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\parseblock.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\readfile.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\util.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\vhar128.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\video.cpp">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MPEG.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MPEGfilter.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MPEGlist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MPEGring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MPEGstream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MPEGsystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smpeg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

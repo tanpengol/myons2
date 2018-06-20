@@ -70,6 +70,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libicu", "libicu\libicu.vcxproj", "{E46958A3-7B87-4318-95E5-AAEDAD3D15F0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsmpeg", "libsmpeg\libsmpeg.vcxproj", "{7C4B4F04-D4BE-4E92-9825-48D60D01F175}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F906DB33-82FC-4B44-ACAD-07F6A123C3E0} = {F906DB33-82FC-4B44-ACAD-07F6A123C3E0}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsdlmain", "libsdlmain\libsdlmain.vcxproj", "{169551DE-A711-464F-8875-D73B9052E445}"
 EndProject
