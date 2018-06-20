@@ -29,6 +29,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmikmod", "libmikmod\libmikmod.vcxproj", "{6DF5C5B0-2A0E-405B-8A5A-536BCD28342A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfreetype", "libfreetype\libfreetype.vcxproj", "{6D478696-DBB6-4FEA-AF16-5916DA7BF29B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487} = {6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsdl", "libsdl\libsdl.vcxproj", "{F906DB33-82FC-4B44-ACAD-07F6A123C3E0}"
 EndProject
@@ -55,6 +58,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsdlmixer", "libsdlmixer\
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsdlttf", "libsdlttf\libsdlttf.vcxproj", "{0451B06E-93D4-40F1-9EA1-0EA28CE6729D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F906DB33-82FC-4B44-ACAD-07F6A123C3E0} = {F906DB33-82FC-4B44-ACAD-07F6A123C3E0}
+		{6D478696-DBB6-4FEA-AF16-5916DA7BF29B} = {6D478696-DBB6-4FEA-AF16-5916DA7BF29B}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtiff", "libtiff\libtiff.vcxproj", "{BF5A8D99-3851-469B-BCFB-D9C935C35339}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -79,6 +86,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjbig", "libjbig\libjbig.vcxproj", "{7DE5CB89-D6EB-45E3-AE2C-3E60D0CA96AC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvorbisfile", "libvorbisfile\libvorbisfile.vcxproj", "{21588589-D28E-45C1-BE65-1863145B373F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbz2", "libbz2\libbz2.vcxproj", "{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -264,6 +273,14 @@ Global
 		{21588589-D28E-45C1-BE65-1863145B373F}.Release|x64.Build.0 = Release|x64
 		{21588589-D28E-45C1-BE65-1863145B373F}.Release|x86.ActiveCfg = Release|Win32
 		{21588589-D28E-45C1-BE65-1863145B373F}.Release|x86.Build.0 = Release|Win32
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Debug|x64.ActiveCfg = Debug|x64
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Debug|x64.Build.0 = Debug|x64
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Debug|x86.Build.0 = Debug|Win32
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Release|x64.ActiveCfg = Release|x64
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Release|x64.Build.0 = Release|x64
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Release|x86.ActiveCfg = Release|Win32
+		{6A3A5BBD-E27D-47D3-ABB9-C45DE1DBA487}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
