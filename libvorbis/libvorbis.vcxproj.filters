@@ -13,5 +13,234 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\books">
+      <UniqueIdentifier>{bf500c15-cefb-410d-995f-cd244cc1220b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\modes">
+      <UniqueIdentifier>{5f08c346-079b-4d95-94ad-108c7c208fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\public">
+      <UniqueIdentifier>{86dcb4e6-bf16-45fc-8fc0-9469cd66e86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\books\coupled">
+      <UniqueIdentifier>{4abb8037-cfc5-467c-b587-14474a3b51b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\books\floor">
+      <UniqueIdentifier>{75fc58b0-d86c-4c3e-bfca-b779a19670e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\books\uncoupled">
+      <UniqueIdentifier>{11132d98-c110-4b33-bad2-6b69dbf09736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\public\vorbis">
+      <UniqueIdentifier>{0f5ba8b9-42e7-44a1-9cd5-33e797935034}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\books\coupled\res_books_51.h">
+      <Filter>头文件\books\coupled</Filter>
+    </ClInclude>
+    <ClInclude Include="src\books\coupled\res_books_stereo.h">
+      <Filter>头文件\books\coupled</Filter>
+    </ClInclude>
+    <ClInclude Include="src\books\floor\floor_books.h">
+      <Filter>头文件\books\floor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\books\uncoupled\res_books_uncoupled.h">
+      <Filter>头文件\books\uncoupled</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\floor_all.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\psych_8.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\psych_11.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\psych_16.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\psych_44.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\residue_8.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\residue_16.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\residue_44.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\residue_44p51.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\residue_44u.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_8.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_11.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_16.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_22.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_32.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_44.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_44p51.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_44u.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modes\setup_X.h">
+      <Filter>头文件\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vorbis\codec.h">
+      <Filter>头文件\public\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vorbis\vorbisenc.h">
+      <Filter>头文件\public\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vorbis\vorbisfile.h">
+      <Filter>头文件\public\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\backends.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bitrate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\codebook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\codec_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\envelope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\highlevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lookup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lookup_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lpc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lsp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\masking.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mdct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\psy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\registry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scales.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\analysis.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\barkmel.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitrate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\block.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codebook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\envelope.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\floor0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\floor1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\info.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lookup.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lsp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mapping0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mdct.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\registry.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\res0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sharedbook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallft.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\synthesis.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vorbisenc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vorbisfile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

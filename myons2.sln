@@ -20,6 +20,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libflac", "libflac\libflac.
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvorbis", "libvorbis\libvorbis.vcxproj", "{AE1AC3E5-1FFB-4B9C-8F51-152155A7F840}"
+	ProjectSection(ProjectDependencies) = postProject
+		{292F20DD-D12B-421C-B9CB-94E4D6997ED9} = {292F20DD-D12B-421C-B9CB-94E4D6997ED9}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "zlib\zlib.vcxproj", "{A6C1614B-67B6-4759-8827-334A478886B9}"
 EndProject
