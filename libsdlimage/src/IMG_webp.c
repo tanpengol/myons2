@@ -171,7 +171,7 @@ SDL_Surface *IMG_LoadWEBP_RW(SDL_RWops *src)
 	Uint32 Amask;
 	WebPBitstreamFeatures features;
 	int raw_data_size;
-	uint8_t *raw_data;
+	uint8_t *raw_data = NULL;
 	int r;
 	uint8_t *ret;
 
