@@ -84,6 +84,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libmikmod\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MIKMOD_BUILD;DLL_EXPORT;DRV_DS;DRV_WIN;DRV_WAV;DRV_RAW;HAVE_LIMITS_H;HAVE_FCNTL_H;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +110,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libmikmod\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MIKMOD_BUILD;DLL_EXPORT;DRV_DS;DRV_WIN;DRV_WAV;DRV_RAW;HAVE_LIMITS_H;HAVE_FCNTL_H;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -115,6 +119,52 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\mikmod.h" />
+    <ClInclude Include="include\mikmod_ctype.h" />
+    <ClInclude Include="include\mikmod_internals.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\drivers\drv_ds.c" />
+    <ClCompile Include="src\drivers\drv_nos.c" />
+    <ClCompile Include="src\drivers\drv_raw.c" />
+    <ClCompile Include="src\drivers\drv_stdout.c" />
+    <ClCompile Include="src\drivers\drv_wav.c" />
+    <ClCompile Include="src\drivers\drv_win.c" />
+    <ClCompile Include="src\loaders\load_669.c" />
+    <ClCompile Include="src\loaders\load_amf.c" />
+    <ClCompile Include="src\loaders\load_dsm.c" />
+    <ClCompile Include="src\loaders\load_far.c" />
+    <ClCompile Include="src\loaders\load_gdm.c" />
+    <ClCompile Include="src\loaders\load_imf.c" />
+    <ClCompile Include="src\loaders\load_it.c" />
+    <ClCompile Include="src\loaders\load_m15.c" />
+    <ClCompile Include="src\loaders\load_med.c" />
+    <ClCompile Include="src\loaders\load_mod.c" />
+    <ClCompile Include="src\loaders\load_mtm.c" />
+    <ClCompile Include="src\loaders\load_okt.c" />
+    <ClCompile Include="src\loaders\load_s3m.c" />
+    <ClCompile Include="src\loaders\load_stm.c" />
+    <ClCompile Include="src\loaders\load_stx.c" />
+    <ClCompile Include="src\loaders\load_ult.c" />
+    <ClCompile Include="src\loaders\load_uni.c" />
+    <ClCompile Include="src\loaders\load_xm.c" />
+    <ClCompile Include="src\mmio\mmalloc.c" />
+    <ClCompile Include="src\mmio\mmerror.c" />
+    <ClCompile Include="src\mmio\mmio.c" />
+    <ClCompile Include="src\playercode\mdreg.c" />
+    <ClCompile Include="src\playercode\mdriver.c" />
+    <ClCompile Include="src\playercode\mdulaw.c" />
+    <ClCompile Include="src\playercode\mloader.c" />
+    <ClCompile Include="src\playercode\mlreg.c" />
+    <ClCompile Include="src\playercode\mlutil.c" />
+    <ClCompile Include="src\playercode\mplayer.c" />
+    <ClCompile Include="src\playercode\munitrk.c" />
+    <ClCompile Include="src\playercode\mwav.c" />
+    <ClCompile Include="src\playercode\npertab.c" />
+    <ClCompile Include="src\playercode\sloader.c" />
+    <ClCompile Include="src\playercode\virtch.c" />
+    <ClCompile Include="src\playercode\virtch2.c" />
+    <ClCompile Include="src\playercode\virtch_common.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

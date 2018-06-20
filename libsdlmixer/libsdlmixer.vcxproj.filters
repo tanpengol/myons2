@@ -13,5 +13,225 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\native_midi">
+      <UniqueIdentifier>{2dfc781b-2cba-4fb8-a73c-e21aabd6dc55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\timidity">
+      <UniqueIdentifier>{0949a939-9838-4782-92ac-f265be028f00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\dynamic_flac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dynamic_fluidsynth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dynamic_mod.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dynamic_mp3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dynamic_ogg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\effects_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fluidsynth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\load_aiff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\load_flac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\load_ogg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\load_voc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\music_cmd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\music_flac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\music_mad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\music_mod.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\music_modplug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\music_ogg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SDL_mixer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wavestream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\native_midi\native_midi.h">
+      <Filter>源文件\native_midi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\native_midi\native_midi_common.h">
+      <Filter>源文件\native_midi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\common.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\config.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\ctrlmode.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\filter.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\instrum.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\mix.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\output.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\playmidi.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\readmidi.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\resample.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\tables.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timidity\timidity.h">
+      <Filter>源文件\timidity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\native_midi\native_midi_common.c">
+      <Filter>源文件\native_midi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\native_midi\native_midi_win32.c">
+      <Filter>源文件\native_midi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\common.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\ctrlmode.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\filter.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\instrum.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\mix.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\output.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\playmidi.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\readmidi.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\resample.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\sdl_a.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\sdl_c.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\tables.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timidity\timidity.c">
+      <Filter>源文件\timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_flac.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_fluidsynth.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_mod.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_mp3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_ogg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\effect_position.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\effect_stereoreverse.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\effects_internal.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fluidsynth.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\load_aiff.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\load_flac.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\load_ogg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\load_voc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mixer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\music.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\music_cmd.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\music_flac.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\music_mad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\music_mod.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\music_modplug.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\music_ogg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wavestream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

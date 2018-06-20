@@ -84,6 +84,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>WAV_MUSIC;MOD_MUSIC;OGG_MUSIC;FLAC_MUSIC;MP3_MUSIC;MID_MUSIC;USE_TIMIDITY_MIDI;USE_NATIVE_MIDI;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libogg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libsdlmixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +110,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>WAV_MUSIC;MOD_MUSIC;OGG_MUSIC;FLAC_MUSIC;MP3_MUSIC;MID_MUSIC;USE_TIMIDITY_MIDI;USE_NATIVE_MIDI;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libogg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libsdlmixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -115,6 +119,78 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\dynamic_flac.h" />
+    <ClInclude Include="include\dynamic_fluidsynth.h" />
+    <ClInclude Include="include\dynamic_mod.h" />
+    <ClInclude Include="include\dynamic_mp3.h" />
+    <ClInclude Include="include\dynamic_ogg.h" />
+    <ClInclude Include="include\effects_internal.h" />
+    <ClInclude Include="include\fluidsynth.h" />
+    <ClInclude Include="include\load_aiff.h" />
+    <ClInclude Include="include\load_flac.h" />
+    <ClInclude Include="include\load_ogg.h" />
+    <ClInclude Include="include\load_voc.h" />
+    <ClInclude Include="include\music_cmd.h" />
+    <ClInclude Include="include\music_flac.h" />
+    <ClInclude Include="include\music_mad.h" />
+    <ClInclude Include="include\music_mod.h" />
+    <ClInclude Include="include\music_modplug.h" />
+    <ClInclude Include="include\music_ogg.h" />
+    <ClInclude Include="include\SDL_mixer.h" />
+    <ClInclude Include="include\wavestream.h" />
+    <ClInclude Include="src\native_midi\native_midi.h" />
+    <ClInclude Include="src\native_midi\native_midi_common.h" />
+    <ClInclude Include="src\timidity\common.h" />
+    <ClInclude Include="src\timidity\config.h" />
+    <ClInclude Include="src\timidity\ctrlmode.h" />
+    <ClInclude Include="src\timidity\filter.h" />
+    <ClInclude Include="src\timidity\instrum.h" />
+    <ClInclude Include="src\timidity\mix.h" />
+    <ClInclude Include="src\timidity\output.h" />
+    <ClInclude Include="src\timidity\playmidi.h" />
+    <ClInclude Include="src\timidity\readmidi.h" />
+    <ClInclude Include="src\timidity\resample.h" />
+    <ClInclude Include="src\timidity\tables.h" />
+    <ClInclude Include="src\timidity\timidity.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dynamic_flac.c" />
+    <ClCompile Include="src\dynamic_fluidsynth.c" />
+    <ClCompile Include="src\dynamic_mod.c" />
+    <ClCompile Include="src\dynamic_mp3.c" />
+    <ClCompile Include="src\dynamic_ogg.c" />
+    <ClCompile Include="src\effects_internal.c" />
+    <ClCompile Include="src\effect_position.c" />
+    <ClCompile Include="src\effect_stereoreverse.c" />
+    <ClCompile Include="src\fluidsynth.c" />
+    <ClCompile Include="src\load_aiff.c" />
+    <ClCompile Include="src\load_flac.c" />
+    <ClCompile Include="src\load_ogg.c" />
+    <ClCompile Include="src\load_voc.c" />
+    <ClCompile Include="src\mixer.c" />
+    <ClCompile Include="src\music.c" />
+    <ClCompile Include="src\music_cmd.c" />
+    <ClCompile Include="src\music_flac.c" />
+    <ClCompile Include="src\music_mad.c" />
+    <ClCompile Include="src\music_mod.c" />
+    <ClCompile Include="src\music_modplug.c" />
+    <ClCompile Include="src\music_ogg.c" />
+    <ClCompile Include="src\native_midi\native_midi_common.c" />
+    <ClCompile Include="src\native_midi\native_midi_win32.c" />
+    <ClCompile Include="src\timidity\common.c" />
+    <ClCompile Include="src\timidity\ctrlmode.c" />
+    <ClCompile Include="src\timidity\filter.c" />
+    <ClCompile Include="src\timidity\instrum.c" />
+    <ClCompile Include="src\timidity\mix.c" />
+    <ClCompile Include="src\timidity\output.c" />
+    <ClCompile Include="src\timidity\playmidi.c" />
+    <ClCompile Include="src\timidity\readmidi.c" />
+    <ClCompile Include="src\timidity\resample.c" />
+    <ClCompile Include="src\timidity\sdl_a.c" />
+    <ClCompile Include="src\timidity\sdl_c.c" />
+    <ClCompile Include="src\timidity\tables.c" />
+    <ClCompile Include="src\timidity\timidity.c" />
+    <ClCompile Include="src\wavestream.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

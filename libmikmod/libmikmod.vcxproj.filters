@@ -13,5 +13,153 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\drivers">
+      <UniqueIdentifier>{46093f2f-a3b2-4c78-9e46-bb30e0c4309a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\loaders">
+      <UniqueIdentifier>{4d09c49c-3dd1-4e45-84da-14df2b45bb9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\mmio">
+      <UniqueIdentifier>{59b38b17-42b4-439e-ad24-d48c0fc167dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\playercode">
+      <UniqueIdentifier>{f032cb98-c367-449b-afed-2e22431d03a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mikmod.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mikmod_ctype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mikmod_internals.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\drivers\drv_ds.c">
+      <Filter>源文件\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drivers\drv_nos.c">
+      <Filter>源文件\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drivers\drv_raw.c">
+      <Filter>源文件\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drivers\drv_stdout.c">
+      <Filter>源文件\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drivers\drv_wav.c">
+      <Filter>源文件\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drivers\drv_win.c">
+      <Filter>源文件\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_669.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_amf.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_dsm.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_far.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_gdm.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_imf.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_it.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_m15.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_med.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_mod.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_mtm.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_okt.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_s3m.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_stm.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_stx.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_ult.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_uni.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loaders\load_xm.c">
+      <Filter>源文件\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mmio\mmalloc.c">
+      <Filter>源文件\mmio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mmio\mmerror.c">
+      <Filter>源文件\mmio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mmio\mmio.c">
+      <Filter>源文件\mmio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mdreg.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mdriver.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mdulaw.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mloader.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mlreg.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mlutil.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mplayer.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\munitrk.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\mwav.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\npertab.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\sloader.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\virtch.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\virtch_common.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\playercode\virtch2.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
