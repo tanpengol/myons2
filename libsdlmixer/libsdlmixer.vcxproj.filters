@@ -78,9 +78,6 @@
     <ClInclude Include="include\wavestream.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\native_midi\native_midi.h">
-      <Filter>源文件\native_midi</Filter>
-    </ClInclude>
     <ClInclude Include="src\native_midi\native_midi_common.h">
       <Filter>源文件\native_midi</Filter>
     </ClInclude>
@@ -117,8 +114,11 @@
     <ClInclude Include="src\timidity\tables.h">
       <Filter>源文件\timidity</Filter>
     </ClInclude>
-    <ClInclude Include="src\timidity\timidity.h">
-      <Filter>源文件\timidity</Filter>
+    <ClInclude Include="include\native_midi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\timidity.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

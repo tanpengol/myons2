@@ -85,7 +85,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>WAV_MUSIC;MOD_MUSIC;OGG_MUSIC;FLAC_MUSIC;MP3_MUSIC;MID_MUSIC;USE_TIMIDITY_MIDI;USE_NATIVE_MIDI;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ons\myons2\libogg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libsdlmixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libsmpeg\include;D:\ons\myons2\libvorbis\include;D:\ons\myons2\libmikmod\include;D:\ons\myons2\libogg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libsdlmixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -111,7 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>WAV_MUSIC;MOD_MUSIC;OGG_MUSIC;FLAC_MUSIC;MP3_MUSIC;MID_MUSIC;USE_TIMIDITY_MIDI;USE_NATIVE_MIDI;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ons\myons2\libogg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libsdlmixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\ons\myons2\libsmpeg\include;D:\ons\myons2\libvorbis\include;D:\ons\myons2\libmikmod\include;D:\ons\myons2\libogg\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libsdlmixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -136,9 +136,10 @@
     <ClInclude Include="include\music_mod.h" />
     <ClInclude Include="include\music_modplug.h" />
     <ClInclude Include="include\music_ogg.h" />
+    <ClInclude Include="include\native_midi.h" />
     <ClInclude Include="include\SDL_mixer.h" />
+    <ClInclude Include="include\timidity.h" />
     <ClInclude Include="include\wavestream.h" />
-    <ClInclude Include="src\native_midi\native_midi.h" />
     <ClInclude Include="src\native_midi\native_midi_common.h" />
     <ClInclude Include="src\timidity\common.h" />
     <ClInclude Include="src\timidity\config.h" />
@@ -151,7 +152,6 @@
     <ClInclude Include="src\timidity\readmidi.h" />
     <ClInclude Include="src\timidity\resample.h" />
     <ClInclude Include="src\timidity\tables.h" />
-    <ClInclude Include="src\timidity\timidity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dynamic_flac.c" />
