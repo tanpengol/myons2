@@ -44,6 +44,8 @@ extern "C" {
  * will be assumed.
  */
 #if defined(_WIN32) || defined(__CYGWIN__)
+#define MIKMOD_BUILD 
+#define MIKMOD_STATIC
 # if defined(MIKMOD_BUILD) && defined(DLL_EXPORT)       /* building libmikmod as a dll for windows */
 #   define MIKMODAPI __declspec(dllexport)
 # elif defined(MIKMOD_BUILD) || defined(MIKMOD_STATIC)  /* building or using static libmikmod for windows */

@@ -378,6 +378,10 @@ void DIB_InitOSKeymap(_THIS)
 {
 	int	i;
 #ifndef _WIN32_WCE
+#ifdef _DEBUG
+	printf("before crash");
+#endif // _DEBUG
+
 	char	current_layout[KL_NAMELENGTH];
 
 	GetKeyboardLayoutName(current_layout);

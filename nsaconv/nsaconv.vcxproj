@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{AE1AC3E5-1FFB-4B9C-8F51-152155A7F840}</ProjectGuid>
-    <RootNamespace>libvorbis</RootNamespace>
+    <ProjectGuid>{9FBD8E55-512D-4EEE-8FA0-8360F9F1F093}</ProjectGuid>
+    <RootNamespace>nsaconv</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -39,17 +39,17 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -78,14 +78,12 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LIBVORBISFILE_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ons\myons2\libogg\include;D:\ons\myons2\libvorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -110,8 +108,6 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LIBVORBISFILE_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ons\myons2\libogg\include;D:\ons\myons2\libvorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -119,75 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\vorbis\codec.h" />
-    <ClInclude Include="include\vorbis\vorbisenc.h" />
-    <ClInclude Include="include\vorbis\vorbisfile.h" />
-    <ClInclude Include="src\backends.h" />
-    <ClInclude Include="src\bitrate.h" />
-    <ClInclude Include="src\books\coupled\res_books_51.h" />
-    <ClInclude Include="src\books\coupled\res_books_stereo.h" />
-    <ClInclude Include="src\books\floor\floor_books.h" />
-    <ClInclude Include="src\books\uncoupled\res_books_uncoupled.h" />
-    <ClInclude Include="src\codebook.h" />
-    <ClInclude Include="src\codec_internal.h" />
-    <ClInclude Include="src\envelope.h" />
-    <ClInclude Include="src\highlevel.h" />
-    <ClInclude Include="src\lookup.h" />
-    <ClInclude Include="src\lookup_data.h" />
-    <ClInclude Include="src\lpc.h" />
-    <ClInclude Include="src\lsp.h" />
-    <ClInclude Include="src\masking.h" />
-    <ClInclude Include="src\mdct.h" />
-    <ClInclude Include="src\misc.h" />
-    <ClInclude Include="src\modes\floor_all.h" />
-    <ClInclude Include="src\modes\psych_11.h" />
-    <ClInclude Include="src\modes\psych_16.h" />
-    <ClInclude Include="src\modes\psych_44.h" />
-    <ClInclude Include="src\modes\psych_8.h" />
-    <ClInclude Include="src\modes\residue_16.h" />
-    <ClInclude Include="src\modes\residue_44.h" />
-    <ClInclude Include="src\modes\residue_44p51.h" />
-    <ClInclude Include="src\modes\residue_44u.h" />
-    <ClInclude Include="src\modes\residue_8.h" />
-    <ClInclude Include="src\modes\setup_11.h" />
-    <ClInclude Include="src\modes\setup_16.h" />
-    <ClInclude Include="src\modes\setup_22.h" />
-    <ClInclude Include="src\modes\setup_32.h" />
-    <ClInclude Include="src\modes\setup_44.h" />
-    <ClInclude Include="src\modes\setup_44p51.h" />
-    <ClInclude Include="src\modes\setup_44u.h" />
-    <ClInclude Include="src\modes\setup_8.h" />
-    <ClInclude Include="src\modes\setup_X.h" />
-    <ClInclude Include="src\os.h" />
-    <ClInclude Include="src\psy.h" />
-    <ClInclude Include="src\registry.h" />
-    <ClInclude Include="src\scales.h" />
-    <ClInclude Include="src\smallft.h" />
-    <ClInclude Include="src\window.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\analysis.c" />
-    <ClCompile Include="src\bitrate.c" />
-    <ClCompile Include="src\block.c" />
-    <ClCompile Include="src\codebook.c" />
-    <ClCompile Include="src\envelope.c" />
-    <ClCompile Include="src\floor0.c" />
-    <ClCompile Include="src\floor1.c" />
-    <ClCompile Include="src\info.c" />
-    <ClCompile Include="src\lookup.c" />
-    <ClCompile Include="src\lpc.c" />
-    <ClCompile Include="src\lsp.c" />
-    <ClCompile Include="src\mapping0.c" />
-    <ClCompile Include="src\mdct.c" />
-    <ClCompile Include="src\psy.c" />
-    <ClCompile Include="src\registry.c" />
-    <ClCompile Include="src\res0.c" />
-    <ClCompile Include="src\sharedbook.c" />
-    <ClCompile Include="src\smallft.c" />
-    <ClCompile Include="src\synthesis.c" />
-    <ClCompile Include="src\vorbisenc.c" />
-    <ClCompile Include="src\vorbisfile.c" />
-    <ClCompile Include="src\window.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

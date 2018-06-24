@@ -176,9 +176,6 @@
     <ClCompile Include="src\analysis.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\barkmel.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\bitrate.c">
       <Filter>源文件</Filter>
     </ClCompile>

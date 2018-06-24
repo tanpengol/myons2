@@ -55,7 +55,7 @@
  *
  * \{
  */
-
+#define FLAC__NO_DLL
 #if defined(FLAC__NO_DLL)
 #define FLAC_API
 

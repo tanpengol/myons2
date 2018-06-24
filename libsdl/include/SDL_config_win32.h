@@ -170,6 +170,7 @@ typedef unsigned int uintptr_t;
 #ifndef _WIN32_WCE
 #define SDL_VIDEO_OPENGL	1
 #define SDL_VIDEO_OPENGL_WGL	1
+#define SDL_VIDEO_OPENGL_WGL	1
 #endif
 
 /* Disable screensaver */

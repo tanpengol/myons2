@@ -116,6 +116,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbz2", "libbz2\libbz2.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", "libiconv\libiconv.vcxproj", "{01F7C3C0-B9DA-4824-95E4-D10327849B95}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sarconv", "sarconv\sarconv.vcxproj", "{3A82E255-FE37-4808-B86E-2B1BDCC5C041}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -316,6 +318,14 @@ Global
 		{01F7C3C0-B9DA-4824-95E4-D10327849B95}.Release|x64.Build.0 = Release|x64
 		{01F7C3C0-B9DA-4824-95E4-D10327849B95}.Release|x86.ActiveCfg = Release|Win32
 		{01F7C3C0-B9DA-4824-95E4-D10327849B95}.Release|x86.Build.0 = Release|Win32
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Debug|x64.ActiveCfg = Debug|x64
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Debug|x64.Build.0 = Debug|x64
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Debug|x86.ActiveCfg = Debug|Win32
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Debug|x86.Build.0 = Debug|Win32
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Release|x64.ActiveCfg = Release|x64
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Release|x64.Build.0 = Release|x64
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Release|x86.ActiveCfg = Release|Win32
+		{3A82E255-FE37-4808-B86E-2B1BDCC5C041}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

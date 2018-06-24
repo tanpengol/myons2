@@ -180,19 +180,10 @@
     <ClInclude Include="src\SDL_fatal.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\audio\SDL_audio_c.h">
-      <Filter>源文件\audio</Filter>
-    </ClInclude>
     <ClInclude Include="src\audio\SDL_audiodev_c.h">
       <Filter>源文件\audio</Filter>
     </ClInclude>
     <ClInclude Include="src\audio\SDL_audiomem.h">
-      <Filter>源文件\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="src\audio\SDL_mixer_m68k.h">
-      <Filter>源文件\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="src\audio\SDL_mixer_MMX.h">
       <Filter>源文件\audio</Filter>
     </ClInclude>
     <ClInclude Include="src\audio\SDL_mixer_MMX_VC.h">
@@ -202,12 +193,6 @@
       <Filter>源文件\audio</Filter>
     </ClInclude>
     <ClInclude Include="src\audio\SDL_wave.h">
-      <Filter>源文件\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="src\audio\windib\SDL_dibaudio.h">
-      <Filter>源文件\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="src\audio\windx5\directx.h">
       <Filter>源文件\audio</Filter>
     </ClInclude>
     <ClInclude Include="src\audio\windx5\SDL_dx5audio.h">
@@ -297,12 +282,6 @@
     <ClInclude Include="src\video\SDL_yuvfuncs.h">
       <Filter>源文件\video</Filter>
     </ClInclude>
-    <ClInclude Include="src\video\windib\SDL_dibevents_c.h">
-      <Filter>源文件\video</Filter>
-    </ClInclude>
-    <ClInclude Include="src\video\windib\SDL_dibvideo.h">
-      <Filter>源文件\video</Filter>
-    </ClInclude>
     <ClInclude Include="src\video\windib\SDL_gapidibvideo.h">
       <Filter>源文件\video</Filter>
     </ClInclude>
@@ -321,6 +300,48 @@
     <ClInclude Include="src\video\windx5\SDL_dx5yuv_c.h">
       <Filter>源文件\video</Filter>
     </ClInclude>
+    <ClInclude Include="src\audio\SDL_audio_c.h">
+      <Filter>源文件\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\windib\SDL_dibevents_c.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\windib\SDL_dibvideo.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\dummy\SDL_nullevents_c.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\dummy\SDL_nullmouse_c.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\dummy\SDL_nullvideo.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\wincommon\SDL_lowvideo.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\wincommon\SDL_sysmouse_c.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\wincommon\SDL_syswm_c.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\wincommon\SDL_wingl_c.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video\wincommon\wmmsg.h">
+      <Filter>源文件\video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\audio\windib\SDL_dibaudio.h">
+      <Filter>源文件\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\audio\disk\SDL_diskaudio.h">
+      <Filter>源文件\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\audio\dummy\SDL_dummyaudio.h">
+      <Filter>源文件\audio</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SDL.c">
@@ -335,9 +356,6 @@
     <ClCompile Include="src\loadso\win32\SDL_sysloadso.c">
       <Filter>源文件\loadso</Filter>
     </ClCompile>
-    <ClCompile Include="src\audio\SDL_audio.c">
-      <Filter>源文件\audio</Filter>
-    </ClCompile>
     <ClCompile Include="src\audio\SDL_audiocvt.c">
       <Filter>源文件\audio</Filter>
     </ClCompile>
@@ -347,19 +365,10 @@
     <ClCompile Include="src\audio\SDL_mixer.c">
       <Filter>源文件\audio</Filter>
     </ClCompile>
-    <ClCompile Include="src\audio\SDL_mixer_m68k.c">
-      <Filter>源文件\audio</Filter>
-    </ClCompile>
-    <ClCompile Include="src\audio\SDL_mixer_MMX.c">
-      <Filter>源文件\audio</Filter>
-    </ClCompile>
     <ClCompile Include="src\audio\SDL_mixer_MMX_VC.c">
       <Filter>源文件\audio</Filter>
     </ClCompile>
     <ClCompile Include="src\audio\SDL_wave.c">
-      <Filter>源文件\audio</Filter>
-    </ClCompile>
-    <ClCompile Include="src\audio\windib\SDL_dibaudio.c">
       <Filter>源文件\audio</Filter>
     </ClCompile>
     <ClCompile Include="src\audio\windx5\SDL_dx5audio.c">
@@ -491,20 +500,53 @@
     <ClCompile Include="src\video\SDL_yuv_sw.c">
       <Filter>源文件\video</Filter>
     </ClCompile>
+    <ClCompile Include="src\video\windx5\SDL_dx5video.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\windx5\SDL_dx5yuv.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\SDL_audio.c">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
     <ClCompile Include="src\video\windib\SDL_dibevents.c">
       <Filter>源文件\video</Filter>
     </ClCompile>
     <ClCompile Include="src\video\windib\SDL_dibvideo.c">
       <Filter>源文件\video</Filter>
     </ClCompile>
+    <ClCompile Include="src\video\dummy\SDL_nullevents.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\dummy\SDL_nullmouse.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\dummy\SDL_nullvideo.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\wincommon\SDL_sysevents.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\wincommon\SDL_sysmouse.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\wincommon\SDL_syswm.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video\wincommon\SDL_wingl.c">
+      <Filter>源文件\video</Filter>
+    </ClCompile>
     <ClCompile Include="src\video\windx5\SDL_dx5events.c">
       <Filter>源文件\video</Filter>
     </ClCompile>
-    <ClCompile Include="src\video\windx5\SDL_dx5video.c">
-      <Filter>源文件\video</Filter>
+    <ClCompile Include="src\audio\windib\SDL_dibaudio.c">
+      <Filter>源文件\audio</Filter>
     </ClCompile>
-    <ClCompile Include="src\video\windx5\SDL_dx5yuv.c">
-      <Filter>源文件\video</Filter>
+    <ClCompile Include="src\audio\disk\SDL_diskaudio.c">
+      <Filter>源文件\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\dummy\SDL_dummyaudio.c">
+      <Filter>源文件\audio</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

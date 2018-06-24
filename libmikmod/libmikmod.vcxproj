@@ -85,7 +85,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\ons\myons2\libmikmod\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MIKMOD_BUILD;DLL_EXPORT;DRV_DS;DRV_WIN;DRV_WAV;DRV_RAW;HAVE_LIMITS_H;HAVE_FCNTL_H;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MIKMOD_STATIC;DRV_STDOUT;WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MIKMOD_BUILD;DRV_DS;DRV_WIN;DRV_WAV;DRV_RAW;HAVE_LIMITS_H;HAVE_FCNTL_H;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -111,7 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\ons\myons2\libmikmod\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MIKMOD_BUILD;DLL_EXPORT;DRV_DS;DRV_WIN;DRV_WAV;DRV_RAW;HAVE_LIMITS_H;HAVE_FCNTL_H;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MIKMOD_STATIC;DRV_STDOUT;WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MIKMOD_BUILD;DRV_DS;DRV_WIN;DRV_WAV;DRV_RAW;HAVE_LIMITS_H;HAVE_FCNTL_H;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -162,6 +162,7 @@
     <ClCompile Include="src\playercode\mwav.c" />
     <ClCompile Include="src\playercode\npertab.c" />
     <ClCompile Include="src\playercode\sloader.c" />
+    <ClCompile Include="src\playercode\strcasecmp.c" />
     <ClCompile Include="src\playercode\virtch.c" />
     <ClCompile Include="src\playercode\virtch2.c" />
     <ClCompile Include="src\playercode\virtch_common.c" />

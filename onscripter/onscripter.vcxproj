@@ -43,6 +43,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -50,6 +51,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -89,10 +91,17 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\zlib\include;D:\ons\myons2\libwebp\include;D:\ons\myons2\libvorbis\include;D:\ons\myons2\libtiff\include;D:\ons\myons2\libsmpeg\include;D:\ons\myons2\libsdlttf\include;D:\ons\myons2\libsdlnet\include;D:\ons\myons2\libsdlmixer\include;D:\ons\myons2\libsdlimage\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libpng\include;D:\ons\myons2\libogg\include;D:\ons\myons2\libmikmod\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libjbig\include;D:\ons\myons2\libiconv\include;D:\ons\myons2\libfreetype\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libbz2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions> FLAC__NO_DLL;WIN32;USE_CDROM;USE_OGG_VORBIS;UTF8_CAPTION;USE_SMPEG;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libiconv.lib;libmikmod.lib;libjbig.lib;libpng.lib;libwebp.lib;libvorbis.lib;libtiff.lib;libsmpeg.lib;libsdlnet.lib;libsdlttf.lib;libsdlmixer.lib;libsdlimage.lib;libpng.lib;libjpeg.lib;libflac.lib;libfreetype.lib;libogg.lib;zlib.lib;libbz2.lib;ws2_32.lib;iphlpapi.lib;winmm.lib;libsdl.lib;libsdlmain.lib;uuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Kernel32.lib;Ntdll.lib;msvcrtd.lib;dxguid.lib;libiconv.lib;libmikmod.lib;libjbig.lib;libpng.lib;libwebp.lib;libvorbis.lib;libtiff.lib;libsmpeg.lib;libsdlnet.lib;libsdlttf.lib;libsdlmixer.lib;libsdlimage.lib;libjpeg.lib;libflac.lib;libfreetype.lib;libogg.lib;zlib.lib;libbz2.lib;ws2_32.lib;iphlpapi.lib;winmm.lib;libsdl.lib;libsdlmain.lib;uuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;ole32.lib;oleaut32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -116,14 +125,63 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\ons\myons2\zlib\include;D:\ons\myons2\libwebp\include;D:\ons\myons2\libvorbis\include;D:\ons\myons2\libtiff\include;D:\ons\myons2\libsmpeg\include;D:\ons\myons2\libsdlttf\include;D:\ons\myons2\libsdlnet\include;D:\ons\myons2\libsdlmixer\include;D:\ons\myons2\libsdlimage\include;D:\ons\myons2\libsdl\include;D:\ons\myons2\libpng\include;D:\ons\myons2\libogg\include;D:\ons\myons2\libmikmod\include;D:\ons\myons2\libjpeg\include;D:\ons\myons2\libjbig\include;D:\ons\myons2\libiconv\include;D:\ons\myons2\libfreetype\include;D:\ons\myons2\libflac\include;D:\ons\myons2\libbz2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions> FLAC__NO_DLL;WIN32;USE_CDROM;USE_OGG_VORBIS;UTF8_CAPTION;USE_SMPEG;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libiconv.lib;libmikmod.lib;libjbig.lib;libpng.lib;libwebp.lib;libvorbis.lib;libtiff.lib;libsmpeg.lib;libsdlnet.lib;libsdlttf.lib;libsdlmixer.lib;libsdlimage.lib;libpng.lib;libjpeg.lib;libflac.lib;libfreetype.lib;libogg.lib;zlib.lib;libbz2.lib;ws2_32.lib;iphlpapi.lib;winmm.lib;libsdl.lib;libsdlmain.lib;uuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Kernel32.lib;Ntdll.lib;msvcrt.lib;dxguid.lib;libiconv.lib;libmikmod.lib;libjbig.lib;libpng.lib;libwebp.lib;libvorbis.lib;libtiff.lib;libsmpeg.lib;libsdlnet.lib;libsdlttf.lib;libsdlmixer.lib;libsdlimage.lib;libpng.lib;libjpeg.lib;libflac.lib;libfreetype.lib;libogg.lib;zlib.lib;libbz2.lib;ws2_32.lib;iphlpapi.lib;winmm.lib;libsdl.lib;libsdlmain.lib;uuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <SubSystem>Console</SubSystem>
     </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\AnimationInfo.h" />
+    <ClInclude Include="src\AVIWrapper.h" />
+    <ClInclude Include="src\BaseReader.h" />
+    <ClInclude Include="src\ButtonLink.h" />
+    <ClInclude Include="src\DirectReader.h" />
+    <ClInclude Include="src\DirtyRect.h" />
+    <ClInclude Include="src\FontInfo.h" />
+    <ClInclude Include="src\LUAHandler.h" />
+    <ClInclude Include="src\NsaReader.h" />
+    <ClInclude Include="src\ONScripter.h" />
+    <ClInclude Include="src\resize_image.h" />
+    <ClInclude Include="src\SarReader.h" />
+    <ClInclude Include="src\ScriptHandler.h" />
+    <ClInclude Include="src\ScriptParser.h" />
+    <ClInclude Include="src\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AnimationInfo.cpp" />
+    <ClCompile Include="src\DirectReader.cpp" />
+    <ClCompile Include="src\DirtyRect.cpp" />
+    <ClCompile Include="src\FontInfo.cpp" />
+    <ClCompile Include="src\NsaReader.cpp" />
+    <ClCompile Include="src\ONScripter.cpp" />
+    <ClCompile Include="src\ONScripter_animation.cpp" />
+    <ClCompile Include="src\ONScripter_command.cpp" />
+    <ClCompile Include="src\ONScripter_effect.cpp" />
+    <ClCompile Include="src\ONScripter_effect_breakup.cpp" />
+    <ClCompile Include="src\ONScripter_event.cpp" />
+    <ClCompile Include="src\ONScripter_file.cpp" />
+    <ClCompile Include="src\ONScripter_file2.cpp" />
+    <ClCompile Include="src\ONScripter_image.cpp" />
+    <ClCompile Include="src\ONScripter_lut.cpp" />
+    <ClCompile Include="src\onscripter_main.cpp" />
+    <ClCompile Include="src\ONScripter_rmenu.cpp" />
+    <ClCompile Include="src\ONScripter_sound.cpp" />
+    <ClCompile Include="src\ONScripter_text.cpp" />
+    <ClCompile Include="src\resize_image.cpp" />
+    <ClCompile Include="src\SarReader.cpp" />
+    <ClCompile Include="src\ScriptHandler.cpp" />
+    <ClCompile Include="src\ScriptParser.cpp" />
+    <ClCompile Include="src\ScriptParser_command.cpp" />
+    <ClCompile Include="src\sjis2utf16.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

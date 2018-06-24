@@ -46,7 +46,7 @@ static	SBYTE *audiobuffer=NULL;
 static BOOL stdout_IsThere(void)
 {
 	/* only allow this driver on pipes */
-	return 1-isatty(1);
+	return 1-_isatty(1);
 }
 
 static int stdout_Init(void)

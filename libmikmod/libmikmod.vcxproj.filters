@@ -161,5 +161,8 @@
     <ClCompile Include="src\playercode\virtch2.c">
       <Filter>源文件\playercode</Filter>
     </ClCompile>
+    <ClCompile Include="src\playercode\strcasecmp.c">
+      <Filter>源文件\playercode</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

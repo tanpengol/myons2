@@ -42,7 +42,7 @@ public:
     int getNumFiles();
     void registerCompressionType( const char *ext, int type );
 
-    struct FileInfo getFileByIndex( unsigned int index );
+    FileInfo getFileByIndex( unsigned int index );
     size_t getFileLength( const char *file_name );
     size_t getFile( const char *file_name, unsigned char *buffer, int *location=NULL );
 

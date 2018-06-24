@@ -79,6 +79,15 @@
     <Filter Include="源文件\gzip">
       <UniqueIdentifier>{0004ba04-dcf9-41bb-913e-3e8bddd7c827}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\pcf">
+      <UniqueIdentifier>{471e6533-c669-4bb0-8bba-81929182c0bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\pfr">
+      <UniqueIdentifier>{1fcfd078-a055-4cf7-b108-3ec0998bc0b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\pshinter">
+      <UniqueIdentifier>{75a3becc-f69e-4b09-a768-7d93f1b05017}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ft2build.h">
@@ -457,6 +466,30 @@
     </ClCompile>
     <ClCompile Include="src\gzip\ftgzip.c">
       <Filter>源文件\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\truetype\truetype.c">
+      <Filter>源文件\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smooth\smooth.c">
+      <Filter>源文件\smooth</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sfnt\sfnt.c">
+      <Filter>源文件\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psnames\psnames.c">
+      <Filter>源文件\psnames</Filter>
+    </ClCompile>
+    <ClCompile Include="src\otvalid\otvalid.c">
+      <Filter>源文件\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pshinter\pshinter.c">
+      <Filter>源文件\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pfr\pfr.c">
+      <Filter>源文件\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pcf\pcf.c">
+      <Filter>源文件\pcf</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

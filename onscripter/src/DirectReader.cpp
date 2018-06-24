@@ -282,10 +282,10 @@ int DirectReader::getRegisteredCompressionType( const char *file_name )
     return NO_COMPRESSION;
 }
     
-struct DirectReader::FileInfo DirectReader::getFileByIndex( unsigned int index )
+DirectReader::FileInfo DirectReader::getFileByIndex( unsigned int index )
 {
     DirectReader::FileInfo fi;
-    
+	strcpy(fi.name, "\0");
     return fi;
 }
 

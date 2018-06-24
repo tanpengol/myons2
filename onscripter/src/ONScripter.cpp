@@ -34,7 +34,7 @@ extern "C" void waveCallback( int channel );
 #define FONT_FILE "default.ttf"
 #define REGISTRY_FILE "registry.txt"
 #define DLL_FILE "dll.txt"
-#define DEFAULT_ENV_FONT "ÇlÇr ÉSÉVÉbÉN"
+#define DEFAULT_ENV_FONT ""
 #define DEFAULT_AUTOMODE_TIME 1000
 
 void ONScripter::initSDL()

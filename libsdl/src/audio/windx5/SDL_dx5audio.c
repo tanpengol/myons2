@@ -19,7 +19,7 @@
     Sam Lantinga
     slouken@libsdl.org
 */
-#include "SDL_config.h"
+#include "SDL_config.h" 
 
 /* Allow access to a raw mixing buffer */
 
@@ -67,11 +67,31 @@ static int Audio_Available(void)
 		//OSVERSIONINFO ver;
 		//ver.dwOSVersionInfoSize = sizeof (OSVERSIONINFO);
 		//GetVersionEx(&ver);
-		if (IsWindowsXPOrGreater()) {
+		/*if (IsWindowsXPOrGreater()) {
 			dsound_ok = 0;
 		}
 		else {
 			dsound_ok = 1;
+		}*/
+
+		OSVERSIONINFO ver;
+		ver.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
+		GetVersionEx(&ver);
+		switch (ver.dwPlatformId) {
+		case VER_PLATFORM_WIN32_NT:
+			if (ver.dwMajorVersion > 4) {
+				/* Win2K */
+				dsound_ok = 1;
+			}
+			else {
+				/* WinNT */
+				dsound_ok = 0;
+			}
+			break;
+		default:
+			/* Win95 or Win98 */
+			dsound_ok = 1;
+			break;
 		}
 		/* Now check for DirectX 5 or better - otherwise
 		 * we will fail later in DX5_OpenAudio without a chance

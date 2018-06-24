@@ -46,7 +46,7 @@ extern "C" void c2pstrcpy(Str255 dst, const char *src);	//#include <TextUtils.h>
 
 void ONScripter::searchSaveFile( SaveFileInfo &save_file_info, int no )
 {
-    char file_name[256];
+	TCHAR file_name[256];
 
     script_h.getStringFromInteger( save_file_info.sjis_no, no, (num_save_file >= 10)?2:1 );
 #if defined(LINUX) || defined(MACOSX) || defined(IOS)
@@ -65,7 +65,7 @@ void ONScripter::searchSaveFile( SaveFileInfo &save_file_info, int no )
     save_file_info.hour   = tm->tm_hour;
     save_file_info.minute = tm->tm_min;
 #elif defined(WIN32)
-    sprintf( file_name, "%ssave%d.dat", save_dir?save_dir:archive_path, no );
+    wsprintf( file_name, TEXT("%ssave%d.dat"), save_dir?save_dir:archive_path, no );
     HANDLE  handle;
     FILETIME    tm, ltm;
     SYSTEMTIME  stm;
